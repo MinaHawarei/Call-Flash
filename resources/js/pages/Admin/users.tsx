@@ -1,4 +1,4 @@
-import AdminLayout from '@/layouts/admin-layout';
+import AdminLayout from '@/layouts/app-layout';
 import { Head, usePage } from '@inertiajs/react';
 import { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';

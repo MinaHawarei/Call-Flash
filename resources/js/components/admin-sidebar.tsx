@@ -9,16 +9,6 @@ import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
     {
-        title: 'TechLAB Dashboard',
-        href: '/admin/reservation',
-        icon: CalendarDays,
-    },
-    {
-        title: 'TechLAB Schedule',
-        href: '/admin/schedule/',
-        icon: CalendarDays,
-    },
-    {
         title: 'Users',
         href: '/admin/users',
         icon: User,

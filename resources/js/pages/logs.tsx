@@ -13,8 +13,8 @@ import { Head, usePage } from '@inertiajs/react';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Call Flash',
-        href: '/voc-logs',
+        title: 'logs',
+        href: '/logs',
     },
 ];
 
@@ -118,11 +118,11 @@ export default function Dashboard() {
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Call Flash Dashboard" />
+            <Head title="Call Flash Logs" />
             <Toaster position="top-right" />
 
             <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4 overflow-x-auto">
-                <h1 className="text-2xl font-bold mb-4">Call Flash Dashboard</h1>
+                <h1 className="text-2xl font-bold mb-4">Call Flash Logs</h1>
                 <div className="flex gap-4 flex-wrap items-center">
                     {/* Switch */}
                     <div className="flex items-center gap-2">

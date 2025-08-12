@@ -111,7 +111,7 @@ export default function Welcome() {
                             <ul className="flex gap-3 text-sm leading-normal">
                                 <li>
                                     <a
-                                        href="/reservation"
+                                        href="/analysis"
                                         className="inline-block rounded-sm border border-black bg-[#1b1b18] px-5 py-1.5 text-sm leading-normal text-white hover:border-black hover:bg-black dark:border-[#eeeeec] dark:bg-[#eeeeec] dark:text-[#1C1C1A] dark:hover:border-white dark:hover:bg-white"
                                     >
                                         Reserve Now

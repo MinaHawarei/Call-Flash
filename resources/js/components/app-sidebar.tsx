@@ -4,7 +4,7 @@ import { NavUser } from '@/components/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link , usePage } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid , CalendarDays , Bell } from 'lucide-react';
+import { User, History , LayoutGrid , CalendarDays , Bell } from 'lucide-react';
 import AppLogo from './app-logo';
 
 
@@ -14,14 +14,14 @@ import AppLogo from './app-logo';
 export function AppSidebar() {
     const mainNavItems: NavItem[] = [
         {
-            title: 'TechLAB Reservation',
-            href: '/reservation',
-            icon: CalendarDays,
+            title: 'Analysis',
+            href: '/analysis',
+            icon: LayoutGrid,
         },
         {
-            title: 'News Feed',
-            href: '/posts',
-            icon: Bell,
+            title: 'Logs',
+            href: '/logs',
+            icon: LayoutGrid,
         },
 
 
@@ -31,19 +31,19 @@ export function AppSidebar() {
 
     const footerNavItems: NavItem[] = [];
     if (user?.role === 'admin') {
-        mainNavItems.push({
-        title: 'Call Flash',
-        href: '/voc-logs',
-        icon: LayoutGrid,
-        });
-    }
-    if (user?.role === 'admin') {
         footerNavItems.push({
-        title: 'Dashboard',
-        href: '/dashboard',
-        icon: LayoutGrid,
+        title: 'Users',
+        href: '/admin/users',
+        icon: User,
+        });
+        footerNavItems.push({
+        title: 'Activity Logs',
+        href: '/admin/activity-logs',
+        icon: History,
         });
     }
+
+
 
     return (
         <Sidebar collapsible="icon" variant="inset">
