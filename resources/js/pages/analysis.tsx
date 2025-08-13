@@ -1,14 +1,8 @@
-import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import axios from 'axios';
-import { toast, Toaster } from 'react-hot-toast';
-import Calendar from 'react-calendar';
+import {  Toaster } from 'react-hot-toast';
 import 'react-calendar/dist/Calendar.css';
-import { Button } from '@/components/ui/button';
-import { Head, usePage } from '@inertiajs/react';
+import { Head } from '@inertiajs/react';
 
 
 const breadcrumbs: BreadcrumbItem[] = [
