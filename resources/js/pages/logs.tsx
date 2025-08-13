@@ -115,7 +115,7 @@ export default function Dashboard() {
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Call Flash Logs" />
+            <Head title="Logs" />
             <Toaster position="top-right" />
 
             <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4 overflow-x-auto">

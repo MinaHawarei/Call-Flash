@@ -16,7 +16,7 @@ export default function Dashboard() {
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Call Flash Analysis" />
+            <Head title="Analysis" />
             <Toaster position="top-right" />
             <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4 overflow-x-auto">
                 <h1 className="text-2xl font-bold mb-4">Call Flash Analysis</h1>
